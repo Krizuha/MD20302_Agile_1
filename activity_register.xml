@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Traditional Food Ha Noi"
+        android:textStyle="italic"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register to continue"
+        android:textStyle="italic"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Username"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="#888888"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edittext_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccp_defaultNameCode="VN" />
+
+        <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#52555A"
+        android:textSize="16sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Username"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="#888888"/>
+
+    <EditText
+        android:id="@+id/edtConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Username"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="#888888"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Register"
+        android:textSize="24dp"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have an account? Click Sign in"
+        android:textColor="#828282"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
